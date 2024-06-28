@@ -10,5 +10,7 @@ file(GLOB SRCS
 
 include_directories(Cobra/include)
 add_subdirectory(Cobra)
-add_executable(${PROJECT_NAME} ${SRCS})
+if (MSVC)
+    add_executable(${PROJECT_NAME} WIN32 ${SRCS})
+endif()
 target_link_libraries(${PROJECT_NAME} Cobra)

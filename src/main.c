@@ -1,7 +1,8 @@
 #include <stdio.h>
 
+#define CBRA_DEBUG
 #include <cobra.h>
 
-int main() {
-    Print();
+void ApplicationStart() {
+    LogInfo("Hello, World!\n");
 }
