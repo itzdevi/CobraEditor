@@ -1,5 +1,3 @@
-#include <stdio.h>
-
 #define CBRA_DEBUG
 #include <cobra.h>
 
